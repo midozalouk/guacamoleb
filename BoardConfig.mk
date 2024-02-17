@@ -9,7 +9,12 @@
 #DEVICE_PATH := device/oneplus/guacamole
 # A/B
 AB_OTA_UPDATER := true
-AB_OTA_PARTITIONS +=
+AB_OTA_PARTITIONS += \
+    boot \
+    dtbo \
+    system \
+    vendor \
+    vbmeta
 BOARD_USES_RECOVERY_AS_BOOT := true													   
 
 # Architecture
